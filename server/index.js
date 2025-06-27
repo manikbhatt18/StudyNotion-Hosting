@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://study-notion-frontend-intmuui9x-bhattmanik94-9674s-projects.vercel.app"
+  "https://study-notion-frontend-six-gilt.vercel.app"
 ];
 
 app.use(cors({
