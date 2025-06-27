@@ -25,12 +25,24 @@ database.connect();
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-	cors({
-		origin: "http://localhost:3000",
-		credentials: true,
-	})
-);
+const cors = require("cors");
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://study-notion-frontend-intmuui9x-bhattmanik94-9674s-projects.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+}));
+
 app.use(
 	fileUpload({
 		useTempFiles: true,
