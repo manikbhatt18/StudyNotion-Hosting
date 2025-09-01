@@ -144,8 +144,8 @@ It provides a seamless learning experience with dedicated dashboards for **Stude
 1. **Clone the repository**  
    
    ```
-   git clone https://github.com/your-username/studynotion.git
-   cd studynotion
+   git clone https://github.com/manikbhatt18/StudyNotion-Hosting.git
+   
    ```
 2. **Install Dependencies**
    ```
