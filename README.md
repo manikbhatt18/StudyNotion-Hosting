@@ -20,7 +20,7 @@ It provides a seamless learning experience with dedicated dashboards for **Stude
 
 - **Frontend:** React.js, Redux, Tailwind CSS  
 - **Backend:** Node.js, Express.js  
-- **Database:** MongoDB (Mongoose ORM), Prisma (with MySQL optional)  
+- **Database:** MongoDB (Mongoose ORM)  
 - **Authentication:** JWT & bcrypt  
 - **Payments:** Razorpay  
 - **Cloud Storage:** Cloudinary  
@@ -143,13 +143,18 @@ It provides a seamless learning experience with dedicated dashboards for **Stude
 
 1. **Clone the repository**  
    
+   ```
    git clone https://github.com/your-username/studynotion.git
    cd studynotion
+   ```
 2. **Install Dependencies**
+   ```
    cd server && npm install
     cd ../src && npm install
+   ```
 3. **Setup environment variables**
      # Server (backend)
+      ```
       MONGO_URI=your_mongo_connection_string
       JWT_SECRET=your_jwt_secret
       RAZORPAY_KEY_ID=your_razorpay_key
@@ -157,9 +162,21 @@ It provides a seamless learning experience with dedicated dashboards for **Stude
       CLOUDINARY_NAME=your_cloud_name
       CLOUDINARY_API_KEY=your_api_key
       CLOUDINARY_API_SECRET=your_api_secret
-      
+      ```
       # Client (frontend)
-      REACT_APP_BASE_URL=http://localhost:5000
+      ```REACT_APP_BASE_URL=http://localhost:5000```
+4. Run the backend
+   ```
+   cd server
+   npm run dev
+   ```
+
+5. Run the frontend
+   ```
+   cd src
+   npm run dev
+   ```
+   
 
 
 
