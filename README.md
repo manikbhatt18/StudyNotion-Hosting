@@ -30,7 +30,7 @@ It provides a seamless learning experience with dedicated dashboards for **Stude
 
 ## 📂 Project Structure  
 
-STUDYNOTION-EDTECH-PLATFORM/
+```STUDYNOTION-EDTECH-PLATFORM/
 │── build/                  # Production build files
 │── node_modules/           # Dependencies
 │
@@ -67,7 +67,7 @@ STUDYNOTION-EDTECH-PLATFORM/
 │── package-lock.json       # Locked versions of dependencies
 │── tailwind.config.js      # Tailwind CSS configuration
 │── README.md               # Documentation
-
+```
 
 
 
