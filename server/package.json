@@ -2,10 +2,11 @@
 	"name": "studynotion-backend",
 	"version": "1.0.0",
 	"description": "studynotion-backend",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon index.js"
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"dev": "nodemon src/index.ts"
 	},
 	"keywords": [
 		"studynotion-backend"
@@ -26,8 +27,22 @@
 		"mongoose": "^7.0.3",
 		"node-schedule": "^2.1.1",
 		"nodemailer": "^6.9.1",
-		"nodemon": "^2.0.22",
 		"otp-generator": "^4.0.1",
 		"razorpay": "^2.8.6"
+	},
+	"devDependencies": {
+		"@types/bcrypt": "^6.0.0",
+		"@types/cookie-parser": "^1.4.10",
+		"@types/cors": "^2.8.19",
+		"@types/express": "^5.0.6",
+		"@types/express-fileupload": "^1.5.1",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/mongoose": "^5.11.96",
+		"@types/node": "^26.0.0",
+		"@types/nodemailer": "^8.0.1",
+		"@types/otp-generator": "^4.0.2",
+		"nodemon": "^3.1.14",
+		"ts-node": "^10.9.2",
+		"typescript": "^6.0.3"
 	}
 }
