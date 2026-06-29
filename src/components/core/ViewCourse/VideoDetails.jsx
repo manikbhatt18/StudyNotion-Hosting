@@ -71,6 +71,7 @@ const VideoDetails = () => {
     setPreviewSource(courseEntireData?.thumbnail || "")
     setVideoEnded(false)
   })()
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [courseSectionData, courseEntireData, location.pathname])
 
 

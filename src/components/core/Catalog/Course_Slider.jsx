@@ -75,7 +75,7 @@ import "swiper/css/autoplay"
 // Import required modules
 import { FreeMode, Pagination, Autoplay } from "swiper"
 
-import Course_Card from "./Course_Card"
+import CourseCard from "./Course_Card"
 
 // Helper to repeat courses if they are too few
 const getLoopedCourses = (courses) => {
@@ -115,7 +115,7 @@ function Course_Slider({ Courses }) {
         >
           {loopedCourses.map((course, i) => (
             <SwiperSlide key={course._id || i}>
-              <Course_Card course={course} Height={"h-[250px]"} />
+              <CourseCard course={course} Height={"h-[250px]"} />
             </SwiperSlide>
           ))}
         </Swiper>
